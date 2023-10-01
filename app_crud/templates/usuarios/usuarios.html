@@ -1,0 +1,28 @@
+{% extends "usuarios/base.html" %}
+{% block conteudo %}
+<div class="container">
+    <h1>Usuarios cadastrados</h1>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Id</th>
+            <th>nome</th>
+            <th>Idade</th>
+        </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{usuario.id}}</td>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.idade}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>
+{% endblock %}
